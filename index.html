@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verifier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Email Verifier</h1>
+            <p>Validate email addresses with our comprehensive verification tool</p>
+        </header>
+        
+        <main>
+            <div class="verification-form">
+                <div class="input-group">
+                    <label for="email-input">Enter Email Address</label>
+                    <input type="email" id="email-input" placeholder="example@domain.com" autocomplete="email">
+                    <button id="verify-btn" type="button">Verify Email</button>
+                </div>
+                
+                <div id="result-container" class="result-container hidden">
+                    <div class="result-header">
+                        <span id="result-icon" class="result-icon"></span>
+                        <h3 id="result-title">Verification Result</h3>
+                    </div>
+                    <div id="result-details" class="result-details"></div>
+                </div>
+            </div>
+            
+            <div class="features">
+                <h2>What We Check</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <h3>Format Validation</h3>
+                        <p>Checks if the email follows proper format standards</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🌐</div>
+                        <h3>Domain Verification</h3>
+                        <p>Validates domain existence and MX records</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔍</div>
+                        <h3>Syntax Analysis</h3>
+                        <p>Comprehensive syntax and structure validation</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Instant Results</h3>
+                        <p>Get immediate feedback on email validity</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 Email Verifier. Simple, fast, and reliable email validation.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
